@@ -4,112 +4,46 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./style.css" />
     <script defer src="./main.js"></script>
     <title>Restaurant Page</title>
   </head>
   <body>
     <div id="content">
-      <body>
-        <header class="header">
-          <div class="container">
-            <h3 class="header-logo">Header Logo</h3>
-            <nav>
-              <ul class="header-link">
-                <li>
-                  <a class="header-links" href="#">header link one</a>
-                </li>
-                <li>
-                  <a class="header-links" href="#">header link two</a>
-                </li>
-                <li>
-                  <a class="header-links" href="#">header link three</a>
-                </li>
-              </ul>
-            </nav>
-          </div>
-        </header>
-
-        <main>
-          <div class="hero">
-            <div class="container flex-2-cols">
-              <div class="hero-text">
-                <h1 class="hero-title">This website is awesome</h1>
-                <p class="hero-title-description">
-                  This website has some subtext that goes here under the maintitle.
-                  It's a smaller font and the color is lower contrast
-                </p>
-                <button class="cta-btn btn--show-modal">Sign up</button>
-              </div>
-              <div class="hero-image">
-                <picture>
-                  <img class="hero-photo" src="img/hero-img.jpg" />
-                </picture>
-              </div>
-            </div>
-          </div>
-          <div class="info">
-            <div class="container">
-              <h2 class="info-title">Some random information</h2>
-              <div class="info-image-boxes">
-                <figure class="info-image-box">
-                  <img class="info-image" src="img/img-1.jpg" />
-                  <figcaption class="info-image-description">
-                    this is some subtext under an illustration or image
-                  </figcaption>
-                </figure>
-                <figure class="info-image-box">
-                  <img class="info-image" src="img/img-2.jpg" />
-                  <figcaption class="info-image-description">
-                    this is some subtext under an illustration or image
-                  </figcaption>
-                </figure>
-                <figure class="info-image-box">
-                  <img class="info-image" src="img/img-3.jpg" />
-                  <figcaption class="info-image-description">
-                    this is some subtext under an illustration or image
-                  </figcaption>
-                </figure>
-                <figure class="info-image-box">
-                  <img class="info-image" src="img/img-4.jpg" />
-                  <figcaption class="info-image-description">
-                    this is some subtext under an illustration or image
-                  </figcaption>
-                </figure>
-              </div>
-            </div>
-          </div>
-          <div class="quote">
-            <div class="container">
-              <div class="quote-body">
-                <p class="quote-text">
-                  "This is an inspiring quote, or a testimonial from a customer.
-                  Maybe it's just filling up space, or maybe people will actually
-                  read it. Who knows? All I know is that it looks nice."
-                </p>
-                <p class="quote-author">-Thor, God of Thunder</p>
-              </div>
-            </div>
-          </div>
-          <div class="cta">
-            <div class="container">
-              <div class="cta-box">
-                <div class="cta-text">
-                  <h4 class="cta-title">Call to action! It's time!</h4>
-                  <p class="cta-description">
-                    Sign up for our product by clicking that button right over
-                    there!
-                  </p>
-                </div>
-                <button class="cta-btn btn--show-modal">Sign up</button>
-              </div>
-            </div>
-          </div>
-        </main>
-
-        <footer class="footer">
-          <p class="footer-text">Copyright &copy; The Odin Project 2022</p>
-        </footer>
+      <nav class="nav">
+        <div class="title">
+          <h1>Mook's Restaurant</h1>
+        </div>
+      </nav>
+      <main class="main">
+        <div class="tabs">
+          <button class="btn tab__1 tab__active">HOME</button>
+          <button class="btn tab__2">MENU</button>
+          <button class="btn tab__3">CONTACTS</button>
+        </div>
+        <div class="content">
+          <img
+            class="main-img"
+            src="../img/home-img.jpg"
+            alt="Dish served in restaurant"
+          />
+          <h2>Heaven on earth, we deliver it to you</h2>
+          <p>
+            What is heaven, if not the tasty fireworks that explode on your
+            tastebuds?
+            <br />
+            <br />
+            We at Mook's restaurant believes that heaven on earth exists, and
+            that we can deliver it to you through our dedication and love for
+            cooking.
+            <br />
+            <br />
+            Our world-renowned chefs and passionate staff are here to make your
+            savory experience something that your heart keeps coming back to,
+            whenever meal time comes.
+          </p>
+        </div>
+      </main>
     </div>
   </body>
 </html>
