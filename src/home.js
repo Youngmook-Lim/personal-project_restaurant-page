@@ -5,7 +5,7 @@ const createHome = function () {
   contentHome.classList.add("content", "content--home");
 
   const homeImage = document.createElement("img");
-  homeImage.src = "../src/img/home-img.jpg";
+  homeImage.src = "./img/home-img.jpg";
   homeImage.alt = "Dish served in restaurant";
   homeImage.classList.add("main-img");
   contentHome.appendChild(homeImage);
