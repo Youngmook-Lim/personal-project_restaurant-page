@@ -1,3 +1,5 @@
 "use strict";
 
-console.log("Sup");
+import mainView from "./home";
+
+mainView();
