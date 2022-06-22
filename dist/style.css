@@ -24,7 +24,11 @@ body {
   font-family: "Libre Baskerville", sans-serif;
   font-weight: 400;
   font-size: 2rem;
+  color: #333;
   line-height: 1.4;
+  background-image: url(./img/background.jpg);
+  background-attachment: fixed;
+  background-size: cover;
 }
 
 .nav {
@@ -33,6 +37,7 @@ body {
   justify-content: center;
   align-items: center;
   padding: 2.4rem 0;
+  opacity: 0.9;
 }
 
 .title {
@@ -42,6 +47,7 @@ body {
 .main {
   max-width: 80rem;
   margin: 2.4rem auto 0 auto;
+  opacity: 0.95;
 }
 
 .tabs {
@@ -54,6 +60,7 @@ body {
 
 .btn {
   font-family: inherit;
+  color: inherit;
   border: none;
   cursor: pointer;
   letter-spacing: 3px;
@@ -88,13 +95,15 @@ body {
   margin: 3.2rem 0;
 }
 
+/* MENU */
+
 .content--menu {
   padding: 0 4.8rem;
 }
 
 .menu--title {
   text-align: center;
-  font-size: 4.4rem;
+  font-size: 3.6rem;
   margin: 2.4rem 0;
 }
 
