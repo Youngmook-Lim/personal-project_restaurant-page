@@ -23,18 +23,23 @@ const createTabs = function () {
   const homeBtn = document.createElement("button");
   homeBtn.classList.add("btn", "tab__1", "tab__active");
   homeBtn.textContent = "HOME";
-  homeBtn.addEventListener("click", () => {
+  homeBtn.addEventListener("click", (e) => {
+    if (e.target.classList.contains("tab__active")) return;
     loadHome();
+    toggleActiveBtn(homeBtn);
     console.log("this worked");
   });
 
   const menuBtn = document.createElement("button");
   menuBtn.classList.add("btn", "tab__2");
   menuBtn.textContent = "MENU";
-  menuBtn.addEventListener("click", () => {
+  menuBtn.addEventListener("click", (e) => {
+    if (e.target.classList.contains("tab__active")) return;
+
     const content = document.querySelector(".content");
 
     content.textContent = "";
+    toggleActiveBtn(menuBtn);
     console.log("this worked too");
   });
 
@@ -64,6 +69,17 @@ const createMain = function () {
   main.appendChild(createContent());
 
   return main;
+};
+
+const toggleActiveBtn = function (button) {
+  const btns = document.querySelectorAll(".btn");
+  btns.forEach((btn) => {
+    if (btn != button) {
+      btn.classList.remove("tab__active");
+      console.log("done");
+    }
+    button.classList.add("tab__active");
+  });
 };
 
 const init = function () {

@@ -2,7 +2,7 @@ import { createText } from "./helpers";
 
 const createHome = function () {
   const contentHome = document.createElement("div");
-  contentHome.classList.add("content", "content--home");
+  contentHome.classList.add("content--home");
 
   const homeImage = document.createElement("img");
   homeImage.src = "./img/home-img.jpg";
