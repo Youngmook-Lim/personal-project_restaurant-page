@@ -115,6 +115,7 @@ body {
 .menus--title {
   font-size: 3rem;
   margin-bottom: 1.2rem;
+  text-decoration: underline;
 }
 
 .menu {
