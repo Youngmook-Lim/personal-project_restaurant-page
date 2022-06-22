@@ -1,7 +1,8 @@
 "use strict";
 
-import { createText } from "./helpers";
+import { createEl } from "./helpers";
 import loadHome from "./home";
+import loadMenu from "./menu";
 
 const createNav = function () {
   const nav = document.createElement("nav");
@@ -11,7 +12,7 @@ const createNav = function () {
   title.classList.add("title");
   nav.appendChild(title);
 
-  title.appendChild(createText("h1", "Mook's Restaurant"));
+  title.appendChild(createEl("h1", "Mook's Restaurant"));
 
   return nav;
 };
@@ -27,7 +28,6 @@ const createTabs = function () {
     if (e.target.classList.contains("tab__active")) return;
     loadHome();
     toggleActiveBtn(homeBtn);
-    console.log("this worked");
   });
 
   const menuBtn = document.createElement("button");
@@ -35,17 +35,18 @@ const createTabs = function () {
   menuBtn.textContent = "MENU";
   menuBtn.addEventListener("click", (e) => {
     if (e.target.classList.contains("tab__active")) return;
-
-    const content = document.querySelector(".content");
-
-    content.textContent = "";
+    loadMenu();
     toggleActiveBtn(menuBtn);
-    console.log("this worked too");
   });
 
   const contactsBtn = document.createElement("button");
   contactsBtn.classList.add("btn", "tab__2");
   contactsBtn.textContent = "CONTACTS";
+  contactsBtn.addEventListener("click", (e) => {
+    if (e.target.classList.contains("tab__active")) return;
+    loadHome();
+    toggleActiveBtn(contactsBtn);
+  });
 
   tabs.appendChild(homeBtn);
   tabs.appendChild(menuBtn);
