@@ -3,6 +3,7 @@
 import { createEl } from "./helpers";
 import loadHome from "./home";
 import loadMenu from "./menu";
+import loadContacts from "./contacts";
 
 const createNav = function () {
   const nav = document.createElement("nav");
@@ -44,7 +45,7 @@ const createTabs = function () {
   contactsBtn.textContent = "CONTACTS";
   contactsBtn.addEventListener("click", (e) => {
     if (e.target.classList.contains("tab__active")) return;
-    loadHome();
+    loadContacts();
     toggleActiveBtn(contactsBtn);
   });
 
