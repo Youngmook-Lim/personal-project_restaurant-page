@@ -78,7 +78,6 @@ const toggleActiveBtn = function (button) {
   btns.forEach((btn) => {
     if (btn != button) {
       btn.classList.remove("tab__active");
-      console.log("done");
     }
     button.classList.add("tab__active");
   });

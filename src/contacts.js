@@ -5,7 +5,7 @@ const createContacts = function () {
 
   const h2 = createEl(
     "h2",
-    "We are never far from you. \nWe're serious.",
+    "We are never far from you. \n We're serious.",
     "contacts--title"
   );
   contentContacts.appendChild(h2);
@@ -16,7 +16,10 @@ const createContacts = function () {
   const phone = createEl("p", "📞 010-1234-5678", null);
   contactsContainer.appendChild(phone);
 
-  const address = createEl("p", "🏠 Where you are, there we are. Look below ⬇");
+  const address = createEl(
+    "p",
+    "🏠 Wherever you are, there we are. Look below ⬇"
+  );
   contactsContainer.appendChild(address);
 
   const mapDiv = createEl("div", null, null);
@@ -47,7 +50,7 @@ const loadMap = function (pos) {
   marker
     .bindPopup(
       L.popup({
-        maxWidth: 130,
+        maxWidth: 140,
         minWidth: 100,
         autoClose: false,
         closeOnClick: false,
@@ -55,7 +58,7 @@ const loadMap = function (pos) {
         closeButton: false,
       })
     )
-    .setPopupContent("HELLO THERE")
+    .setPopupContent("HELLO THERE!")
     .openPopup();
 };
 
