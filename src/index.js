@@ -73,6 +73,31 @@ const createMain = function () {
   return main;
 };
 
+const createFooter = function () {
+  const footer = createEl("footer", null, "footer");
+
+  const copyright = createEl(
+    "p",
+    `Copyright ©  ${new Date().getFullYear()}`,
+    null
+  );
+  footer.appendChild(copyright);
+
+  const name = createEl("p", "Youngmook Lim", null);
+  footer.appendChild(name);
+
+  const link = createEl("a", null, null);
+  link.href = "https://github.com/Youngmook-Lim/";
+  link.target = "_blank";
+  footer.appendChild(link);
+
+  const i = createEl("i", null, "fa-brands");
+  i.classList.add("fa-github");
+  link.appendChild(i);
+
+  return footer;
+};
+
 const toggleActiveBtn = function (button) {
   const btns = document.querySelectorAll(".btn");
   btns.forEach((btn) => {
@@ -87,6 +112,7 @@ const init = function () {
   const content = document.getElementById("content");
   content.appendChild(createNav());
   content.appendChild(createMain());
+  content.appendChild(createFooter());
   loadHome();
 };
 
