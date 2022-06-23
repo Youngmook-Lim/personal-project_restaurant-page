@@ -85,6 +85,8 @@ body {
   background-color: var(--background-color);
 }
 
+/* HOME */
+
 .main-img {
   display: block;
   width: 70%;
@@ -92,7 +94,12 @@ body {
 }
 
 .content--home h2 {
+  font-size: 3rem;
   margin: 3.2rem 0;
+}
+
+.content--home p {
+  font-size: 1.8rem;
 }
 
 /* MENU */
